@@ -5,11 +5,11 @@
 - [x] Criar arquivo de configuração do banco de dados
 - [x] Criar script SQL para o banco de dados
 
-## Fase 2: Modelos (Models)
+## Fase 2: Modelos (Models) ✅
 - [x] Criar modelo Autor.php ✅
 - [x] Criar modelo Livro.php ✅
-- [ ] Criar modelo Leitor.php
-- [ ] Criar modelo Emprestimo.php
+- [x] Criar modelo Leitor.php ✅
+- [x] Criar modelo Emprestimo.php ✅
 
 ## Fase 3: Controladores (Controllers)
 - [ ] Criar AutorController.php

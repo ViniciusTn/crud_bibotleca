@@ -16,12 +16,10 @@ class Emprestimo {
     }
 
     public function create() {
-        // Verificar se o livro já está emprestado (sem data de devolução)
         if (!$this->isLivroDisponivel($this->id_livro)) {
             throw new Exception("Livro já está emprestado e não pode ser emprestado novamente.");
         }
 
-        // Verificar se o leitor já tem 3 empréstimos ativos
         if ($this->countEmprestimosAtivos($this->id_leitor) >= 3) {
             throw new Exception("Leitor já possui 3 empréstimos ativos. Limite máximo atingido.");
         }
@@ -127,7 +125,6 @@ class Emprestimo {
         return false;
     }
 
-    // Métodos auxiliares para validação de regras de negócio
     private function isLivroDisponivel($id_livro) {
         $query = "SELECT COUNT(*) as count FROM " . $this->table_name . " WHERE id_livro = :id_livro AND data_devolucao IS NULL";
         $stmt = $this->conn->prepare($query);
