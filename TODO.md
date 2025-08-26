@@ -39,19 +39,18 @@
 - ✅ Database configuration complete
 - ✅ Autor model complete
 - ✅ Livro model complete
+- ✅ Leitor model complete
+- ✅ Emprestimo model complete
 - ✅ SQL schema with sample data complete
-- ❌ Missing: Leitor model, Emprestimo model
 - ❌ Missing: All controllers
 - ❌ Missing: All views
 - ❌ Missing: Main interface and styling
 - ❌ Missing: Documentation
 
 ## Próximos Passos:
-1. Criar modelo Leitor.php
-2. Criar modelo Emprestimo.php
-3. Criar controladores para todas as entidades
-4. Criar views para CRUD operations
-5. Implementar index.php com dashboard
-6. Adicionar CSS styling
-7. Criar README.md
-8. Testar todas as funcionalidades
+1. Criar controladores para todas as entidades
+2. Criar views para CRUD operations
+3. Implementar index.php com dashboard
+4. Adicionar CSS styling
+5. Criar README.md
+6. Testar todas as funcionalidades
