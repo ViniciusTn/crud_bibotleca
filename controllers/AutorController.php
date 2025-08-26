@@ -17,7 +17,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 switch ($method) {
     case 'GET':
         if (isset($_GET['id'])) {
-            // Get single autor
+            
             $autor->id_autor = $_GET['id'];
             $stmt = $autor->read();
             $num = $stmt->rowCount();
@@ -51,7 +51,7 @@ switch ($method) {
                 echo json_encode(array("message" => "Nenhum autor encontrado."));
             }
         } else {
-            // Get all autores
+            
             $stmt = $autor->read();
             $num = $stmt->rowCount();
             
